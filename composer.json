@@ -1,0 +1,48 @@
+{
+	"name":        "pxn/schfree-website",
+	"description": "Website for schematicsforfree.com",
+	"type":        "project",
+	"homepage":    "http://schematicsforfree.com/",
+	"license":     "proprietary",
+	"support": {
+		"issues": "https://github.com/PoiXson/schfree-website/issues",
+		"source": "https://github.com/PoiXson/schfree-website",
+		"irc":    "irc://irc.esper.net/poixson"
+	},
+	"authors": [{
+		"name":  "lorenzop",
+		"role":  "Developer"
+	}],
+	"autoload": {
+		"psr-4": {
+			"pxn\\schfreeWebsite\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"pxn\\schfreeWebsite\\tests\\":    "tests/",
+			"pxn\\schfreeWebsite\\examples\\": "examples/"
+		}
+	},
+	"archive": {
+		"exclude": [
+			"tests/",
+			"examples/"
+		]
+	},
+	"require": {
+		"pxn/phpPortal":      "0.1.7",
+		"twig/twig":          "v1.*",
+		"components/jquery":  "3.1.*",
+		"twbs/bootstrap":     "v3.3.*"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "5.*"
+	},
+	"scripts": {
+		"test": "phpunit",
+		"pre-dependencies-solving": "sh symlinks.sh --restore",
+		"post-install-cmd":         "sh symlinks.sh --post-install",
+		"post-update-cmd":          "sh symlinks.sh --post-update"
+	}
+}
