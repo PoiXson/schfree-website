@@ -1,0 +1,7 @@
+SchematicsForFree Website 0.1.x
+
+
+2017-03-22 schfreeWebsite 0.1.0
+===============================
+* initial release
+* using phpUtils 0.1.29 phpPortal 0.1.8 and pxdb 0.1.4
