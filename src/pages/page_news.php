@@ -8,6 +8,6 @@
 namespace pxn\schfreeWebsite\pages;
 
 
-class page_news extends \pxn\phpPortal\pages\Blog {
+class page_news extends \pxn\phpPortal\pages\blog\Blog {
 
 }
