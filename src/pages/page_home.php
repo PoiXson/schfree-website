@@ -7,14 +7,18 @@
  */
 namespace pxn\schfreeWebsite\pages;
 
+use pxn\phpUtils\Paths;
+
 
 class page_home extends \pxn\phpPortal\pages\wiki\Wiki {
 
 
 
 	protected function getPageData() {
+		$dataPath = Paths::data();
+		$path = "$dataPath/wiki";
 		$data = \file_get_contents(
-			__DIR__.'/home.txt'
+			"$path/home.txt"
 		);
 		return $data;
 	}
