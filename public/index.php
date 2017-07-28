@@ -14,7 +14,7 @@ require(__DIR__.'/../pxnloader.php');
 
 // schfree website
 $app = register_app('pxn\\schfreeWebsite\\schfreeWebsite');
-$app->setDefaultPage('news');
+\pxn\phpPortal\ConfigPortal::setDefaultPage('home');
 
 // shell tools
 //$app = register_app('pxn\\schfreeWebsite\\schfreeShell');
